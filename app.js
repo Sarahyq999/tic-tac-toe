@@ -3,9 +3,10 @@
 
 
 /*---------------------------- Variables (state) ----------------------------*/
- let currentPlayer='X'
- //let gameOver=false
- //let moveCount=0
+ let currentPlayer='X';
+ let X =true ;
+ let isgameover=false
+ //let moveCount=0;
 
 
 /*------------------------ Cached Element References ------------------------*/
@@ -24,43 +25,134 @@ const square8El = document.querySelector('[id="8"]');
 
 /*-------------------------------- Functions --------------------------------*/
 messageEl.textContent=` Its ${currentPlayer} turn`
- //function playMove(squareEl){
-   // if(squareEl.textContent!==""||gameOver){
-      //  return
 
+
+ //function playMove(squareEl){ 
+    //if(squareEl.textContent!==""||gameOver){
+       // return
     //}
-    //squareEl.textContent=`${currentPlayer}'
+    //if sqr not empty = game nit over= true + false =true 
 
- //}
+
+    //squareEl.textContent=currentPlayer;
+     //moveCount++;
+     //checkWinner();
+      //if(gameOver){
+     // return
+      //}
+//}
 
 //*----------------------------- Event Listeners -----------------------------*/
  square0El.addEventListener('click',()=>{
-    square0El.textContent=currentPlayer
+    if(square0El.textContent!=='' || isgameover=== true){
+        return 
+    } else{
+        square0El.textContent=currentPlayer
+        if(currentPlayer==='X'){
+            currentPlayer="O"
+        }else{
+            currentPlayer='X'
+        }
+    }
+    messageEl.textContent=` Its ${currentPlayer} turn`
  })
 
   square1El.addEventListener('click',()=>{
-    square1El.textContent=currentPlayer
+    if(square1El.textContent!=='' || isgameover=== true){
+        return 
+    } else{
+        square1El.textContent=currentPlayer
+        if(currentPlayer==='X'){
+            currentPlayer="O"
+        }else{
+            currentPlayer='X'
+        } }
+        messageEl.textContent=` Its ${currentPlayer} turn`
  })
 
   square2El.addEventListener('click',()=>{
-    square2El.textContent=currentPlayer
+      if(square2El.textContent!=='' || isgameover=== true){
+        return 
+    } else{
+        square2El.textContent=currentPlayer
+        if(currentPlayer==='X'){
+            currentPlayer="O"
+        }else{
+            currentPlayer='X'
+        }}
+   messageEl.textContent=` Its ${currentPlayer} turn`
  })
   square3El.addEventListener('click',()=>{
-    square3El.textContent=currentPlayer
+      if(square3El.textContent!=='' || isgameover=== true){
+        return 
+    } else{
+        square3El.textContent=currentPlayer
+        if(currentPlayer==='X'){
+            currentPlayer="O"
+        }else{
+            currentPlayer='X'
+        }}
+   messageEl.textContent=` Its ${currentPlayer} turn`
  })
   square4El.addEventListener('click',()=>{
-    square4El.textContent=currentPlayer
+      if(square4El.textContent!=='' || isgameover=== true){
+        return 
+    } else{
+        square4El.textContent=currentPlayer
+        if(currentPlayer==='X'){
+            currentPlayer="O"
+        }else{
+            currentPlayer='X'
+        }}
+   messageEl.textContent=` Its ${currentPlayer} turn`
  })
 
   square5El.addEventListener('click',()=>{
-    square5El.textContent=currentPlayer
+      if(square5El.textContent!=='' || isgameover=== true){
+        return 
+    } else{
+        square5El.textContent=currentPlayer
+        if(currentPlayer==='X'){
+            currentPlayer="O"
+        }else{
+            currentPlayer='X'
+        }}
+   messageEl.textContent=` Its ${currentPlayer} turn`
  })
   square6El.addEventListener('click',()=>{
-    square6El.textContent=currentPlayer
+      if(square6El.textContent!=='' || isgameover=== true){
+        return 
+    } else{
+        square6El.textContent=currentPlayer
+        if(currentPlayer==='X'){
+            currentPlayer="O"
+        }else{
+            currentPlayer='X'
+        }}
+   messageEl.textContent=` Its ${currentPlayer} turn`
  })
   square7El.addEventListener('click',()=>{
-    square7El.textContent=currentPlayer
+     if(square7El.textContent!=='' || isgameover=== true){
+        return 
+    } else{
+        square7El.textContent=currentPlayer
+        if(currentPlayer==='X'){
+            currentPlayer="O"
+        }else{
+            currentPlayer='X'
+        }}
+    messageEl.textContent=` Its ${currentPlayer} turn`
  })
   square8El.addEventListener('click',()=>{
-    square8El.textContent=currentPlayer
+      if(square8El.textContent!=='' || isgameover=== true){
+        return 
+    } else{
+        square8El.textContent=currentPlayer
+        if(currentPlayer==='X'){
+            currentPlayer="O"
+        }else{
+            currentPlayer='X'
+        }
+    }
+messageEl.textContent=` Its ${currentPlayer} turn`
  })
